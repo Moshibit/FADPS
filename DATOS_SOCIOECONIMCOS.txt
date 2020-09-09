@@ -1,0 +1,9 @@
+Edad
+Sexo
+Estado Civil
+Cuántos viven en el hogar?
+Nivel de escolaridad
+Ocupación
+Ingresos
+Nacionalidad
+Ciudad
