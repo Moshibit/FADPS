@@ -1,0 +1,10 @@
+cosas por hacer
+
++ página web
++ sistema con Java
+	- ODT
+	  . Usuarios
+          . Encuesta
+	- sistema
++ BBDD
++ app Android
