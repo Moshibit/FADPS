@@ -2,7 +2,7 @@ cosas por hacer
 
 + página web
 + sistema con Java
-	- ODT
+	- DTO
 	  . Usuarios
           . Encuesta
 	- sistema
