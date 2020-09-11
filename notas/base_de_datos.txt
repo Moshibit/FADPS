@@ -1,0 +1,6 @@
+Tabla: usuario
+  - idUsuario INT PK NN AI
+  - nombreUsuario VARCHAR NN
+  - password VARCHAR NN
+  - email VARCHAR NN  
+  - lastSession default='0000-00-00 00:00:00'
