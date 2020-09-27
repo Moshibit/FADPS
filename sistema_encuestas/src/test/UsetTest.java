@@ -3,9 +3,6 @@
  */
 package test;
 
-import static data.GeneroEnum.FEMENINO;
-import static data.GeneroEnum.MASCULINO;
-
 import data.UserDTO;
 
 /**
@@ -21,23 +18,7 @@ public class UsetTest
     {
         // probamos crear instancias con los constructores
 
-        UserDTO myUsuarioVacio = new UserDTO();
-        UserDTO myUsuario1 = new UserDTO( "María", "Pérez", "Parra", FEMENINO,
-                "maria@correoficticio.com" );
-
-        // probamos los setter y getters con la instancias myUsuarioVacio
-
-        myUsuarioVacio.setNombre( "Juan Miguel" );
-        myUsuarioVacio.setPaterno( "González" );
-        myUsuarioVacio.setMaterno( "Peralta" );
-        myUsuarioVacio.setGenero( MASCULINO );
-        myUsuarioVacio.setEmail( "juan@correoficticio.com" );
-
-        System.out.println( myUsuarioVacio.getNombre() );
-        System.out.println( myUsuarioVacio.getPaterno() );
-        System.out.println( myUsuarioVacio.getMaterno() );
-        System.out.println( myUsuarioVacio.getGenero() );
-        System.out.println( myUsuarioVacio.getEmail() );
+        UserDTO myUsuario1 = new UserDTO( 1, "pato01", "wxyz", "un@correo.com", "0l" );
 
         // Test de metodos tostring y show con la instancia myUsuario1
 

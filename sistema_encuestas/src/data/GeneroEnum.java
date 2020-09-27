@@ -8,19 +8,21 @@ package data;
  */
 public enum GeneroEnum
 {
-    FEMENINO,
-    MASCULINO;
-    
+    FEMENINO, MASCULINO;
+
     /**
      * @return
      */
-    public String getValue() 
+    public String getValue()
     {
-        switch ( this )  
+        switch ( this )
         {
-            case FEMENINO: return "Femenino";
-            case MASCULINO: return "Masculino";
-            default: return "No asignado";
+            case FEMENINO:
+                return "Femenino";
+            case MASCULINO:
+                return "Masculino";
+            default:
+                return "No asignado";
         }
     }
 }
