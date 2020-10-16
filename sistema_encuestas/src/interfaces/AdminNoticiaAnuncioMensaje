@@ -1,0 +1,102 @@
+package Interfaces;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JButton;
+
+public class AdminNoticiaAnuncioMensaje extends JFrame {
+	private Mensajes  contentPane2; 
+	private JPanel contentPane;
+	private JScrollPane scrollpane1;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AdminNoticiaAnuncioMensaje frame = new AdminNoticiaAnuncioMensaje();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+		
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public AdminNoticiaAnuncioMensaje() {
+		setTitle("Sistema de Encuestas - Noticia/Anuncio/Mensaje");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Noticias/Anuncios/Mensajes");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(10, 11, 414, 35);
+		contentPane.add(lblNewLabel);
+		
+		 JTextArea txtrNoticiaanunciomensaje = new JTextArea();
+		txtrNoticiaanunciomensaje.setText("Noticia/Anuncio/Mensaje");
+		txtrNoticiaanunciomensaje.setBounds(186, 50, 207, 150);
+		contentPane.add(txtrNoticiaanunciomensaje);
+		
+		
+		JRadioButton rdbtnNewRadioButton = new JRadioButton("Noticia");
+		rdbtnNewRadioButton.setBounds(21, 71, 109, 23);
+		contentPane.add(rdbtnNewRadioButton);
+		
+		JRadioButton rdbtnAnuncio = new JRadioButton("Anuncio");
+		rdbtnAnuncio.setBounds(21, 111, 109, 23);
+		contentPane.add(rdbtnAnuncio);
+		
+		JRadioButton rdbtnNewRadioButton_1_1 = new JRadioButton("Mensaje");
+		rdbtnNewRadioButton_1_1.setBounds(21, 150, 109, 23);
+		contentPane.add(rdbtnNewRadioButton_1_1);
+		
+		JButton btnNewButton = new JButton("Generar");
+		btnNewButton.setBounds(87, 198, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		JButton btnAtras = new JButton("Atras");
+		btnAtras.setBounds(199, 200, 89, 23);
+		contentPane.add(btnAtras);
+		
+		btnAtras.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent arg0) {
+				PerfilAdministrador  perfil=new PerfilAdministrador();
+				perfil.setVisible(true);
+			}
+
+			}); 
+		btnNewButton.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent arg0) {
+				PerfilAdministrador  perfil=new PerfilAdministrador();
+				perfil.setVisible(true);
+			}
+
+			});
+	}
+}
